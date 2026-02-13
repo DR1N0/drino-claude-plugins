@@ -37,14 +37,17 @@ This plugin provides AI prompt generation skills for various creative content ty
 
 ## Installation / 安装
 
-1. Clone or download this skill library to your local machine:
+1. Add the marketplace / 添加市场:
    ```bash
-   git clone <your-repo-url> ~/.claude/plugins/marketplaces/drino-claude-skills
+   /plugin marketplace add DR1N0/drino-claude-plugins
    ```
 
-2. Reload Claude Code plugins or restart Claude Code
+2. Install the plugin / 安装插件:
+   ```bash
+   /plugin install prompt-gen@drino-claude-plugins
+   ```
 
-3. The prompt-gen plugin and its skills will be automatically discovered and available for use
+3. Restart Claude Code / 重启 Claude Code
 
 ---
 

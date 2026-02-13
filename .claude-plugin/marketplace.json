@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "drino-claude-skills",
+  "name": "drino-claude-plugins",
   "description": "Claude Code skill library of DR1N0 / DR1N0的Claude技能库",
   "version": "1.0.0",
   "owner": {

@@ -1,8 +1,8 @@
-# DR1N0 Claude Skills / DR1N0 Claude技能库
+# DR1N0 Claude Plugins / DR1N0 Claude插件库
 
-Personal skill library for Claude Code - Professional tools for AI-assisted development and content creation.
+Personal plugin/skill library for Claude Code - Professional tools for AI-assisted development and content creation.
 
-Claude Code的个人技能库 - 用于AI辅助开发和内容创作的专业工具。
+Claude Code的个人插件库 - 用于AI辅助开发和内容创作的工具。
 
 ---
 
@@ -43,22 +43,17 @@ This marketplace contains custom skills designed to enhance Claude Code's capabi
 
 ## Installation / 安装
 
-### Option 1: Clone Repository / 克隆仓库
+1. Add the marketplace / 添加市场:
+   ```bash
+   /plugin marketplace add DR1N0/drino-claude-plugins
+   ```
 
-```bash
-# Clone to Claude's marketplace directory
-git clone https://github.com/yourusername/drino-claude-skills.git ~/.claude/plugins/marketplaces/drino-claude-skills
+2. Install the plugin / 安装插件:
+   ```bash
+   /plugin install prompt-gen@drino-claude-plugins
+   ```
 
-# Reload Claude Code
-# Claude Code will auto-discover skills
-```
-
-### Option 2: Manual Installation / 手动安装
-
-1. Download this repository
-2. Place in `~/.claude/plugins/marketplaces/drino-claude-skills`
-3. Restart or reload Claude Code
-4. Skills will be automatically discovered
+3. Restart Claude Code / 重启 Claude Code
 
 ---
 
