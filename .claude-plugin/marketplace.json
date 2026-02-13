@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "drino-claude-skills",
+  "description": "Claude Code skill library of DR1N0 / DR1N0的Claude技能库",
+  "version": "1.0.0",
+  "owner": {
+    "name": "DR1N0"
+  },
+  "plugins": [
+    {
+      "name": "prompt-gen",
+      "description": "AI prompt generation for video, images, and creative content / 视频、图像和创意内容的AI提示词生成",
+      "version": "0.1.0",
+      "source": "./plugins/prompt-gen",
+      "category": "productivity",
+      "strict": false
+    }
+  ]
+}
