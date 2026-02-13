@@ -1,12 +1,8 @@
 {
-  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "prompt-gen",
   "description": "AI prompt generation for creative content: video storyboards, image prompts, and more / 创意内容的AI提示词生成：视频分镜、图像提示词等",
   "version": "0.1.0",
   "author": {
     "name": "DR1N0"
-  },
-  "category": "productivity",
-  "tags": ["prompt", "generation", "AI", "video", "image", "storyboard", "提示词", "生成", "视频", "图像", "分镜"],
-  "readme": "README.md"
+  }
 }
