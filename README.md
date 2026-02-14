@@ -16,28 +16,35 @@ This marketplace contains custom skills designed to enhance Claude Code's capabi
 
 ## Available Plugins / 可用插件
 
-### 🎨 Prompt Generation - AI Content Prompts
+### 🎨 Prompt Generation - Seedance 2.0 Video Prompts
 
-**English:** AI prompt generation for creative content including video storyboards, image prompts, and more. Helps you craft optimized prompts for various AI generation tools (Seedance, Midjourney, DALL-E, etc.).
+**English:** Specialized AI prompt generator for **Seedance 2.0** (ByteDance's video AI). Automatically splits your video ideas into 3-4 independent single shots that can be generated separately and stitched together. Understands Seedance's unique single-shot architecture.
 
-**中文:** 创意内容的AI提示词生成，包括视频分镜、图像提示词等。帮助您为各种AI生成工具（Seedance、Midjourney、DALL-E等）制作优化的提示词。
+**中文:** 专为**Seedance 2.0**(字节跳动视频AI)设计的提示词生成器。自动将您的视频想法拆分成3-4个独立单镜头，可分别生成后拼接。深度理解Seedance的单镜头架构。
 
 **Current Skills / 当前技能:**
-- 🎬 **Storyboard** - Video AI storyboard generation
-  - Bilingual support (English/Chinese)
-  - Interactive workflow
-  - Optimized for Seedance 2.0, Runway ML, Pika
+- 🎬 **Seedance Shots** - 单镜头组生成器 (v1.0)
+  - Single-shot splitting logic / 单镜头拆分逻辑
+  - Interactive AskUserQuestion workflow / 交互式问答
+  - Chinese-first strategy / 中文优先策略
+  - Multi-modal references / 多模态引用
+  - Video extension & editing / 视频延长和编辑
+
+**Why Seedance-focused? / 为什么专注Seedance?**
+- Traditional storyboards use timeline control (0-3s, 3-7s) - doesn't work with Seedance
+- Seedance is a single-shot model - needs independent shots, not multi-scene scripts
+- Deep platform optimization beats generic solutions
 
 **Future Skills / 未来技能:**
-- 📸 Photo prompts (Midjourney, DALL-E)
-- 🎵 Music prompts (Suno, Udio)
-- ✍️ Text prompts (creative writing)
+- 📸 Seedance Image (image-to-video)
+- 🎵 Music Sync (beat-matching)
+- 🎬 Long-form Narrative (30s+ stories)
 
 [View Documentation](plugins/prompt-gen/README.md)
 
 **Trigger Phrases:**
-- English: "Create a storyboard", "generate video prompts", "plan video scenes"
-- 中文: "创建分镜", "生成视频提示词", "规划视频场景"
+- English: "Create video shots for...", "Generate Seedance prompts", "Make a video about..."
+- 中文: "帮我生成...的视频镜头", "创建Seedance提示词", "制作关于...的视频"
 
 ---
 
@@ -81,7 +88,7 @@ Each skill in this marketplace follows the official Claude Code plugin structure
 
 ```
 plugins/
-└── skill-name/
+└── plugin-name/
     ├── .claude-plugin/
     │   └── plugin.json       # Plugin metadata
     ├── skills/
@@ -98,7 +105,7 @@ plugins/
 
 ### Adding New Skills / 添加新技能
 
-1. Create plugin directory: `plugins/your-skill/`
+1. Create plugin directory: `plugins/your-plugin/`
 2. Add plugin manifest: `.claude-plugin/plugin.json`
 3. Create skill: `skills/your-skill/SKILL.md`
 4. Update marketplace.json
@@ -145,12 +152,20 @@ This is a personal skill library. If you have suggestions or find issues:
 
 ## Version History / 版本历史
 
-### v1.0.0 (2024-02-12)
-- Initial release
-- Added Prompt Generation plugin with Storyboard skill (bilingual)
-- Complete marketplace structure
-- Documentation and examples
-- Scalable architecture for future prompt generation skills
+### v1.0.0 (2024-02-13)
+- Major refactor: Generic storyboard → Seedance 2.0 specialized
+- Renamed skill: storyboard → seedance-shots
+- Single-shot splitting logic (matches Seedance architecture)
+- Interactive AskUserQuestion workflow
+- Chinese-first language strategy
+- 10+ comprehensive examples
+- Quick reference, technical specs, templates
+- Multi-modal reference support
+- Video extension and editing features
+
+### v0.1.0 (2024-02-12)
+- Initial release (generic storyboard)
+- Deprecated due to platform mismatch
 
 ---
 

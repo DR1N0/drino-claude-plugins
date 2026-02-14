@@ -1,7 +1,7 @@
 {
   "name": "prompt-gen",
-  "description": "AI prompt generation for creative content: video storyboards, image prompts, and more / 创意内容的AI提示词生成：视频分镜、图像提示词等",
-  "version": "0.1.0",
+  "description": "专为Seedance 2.0打造的视频分镜拆解与提示词生成工具。支持自动拆分创意，也支持用户自带分镜，输出可直接生成的单镜头提示词 | Seedance 2.0 shot breakdown and prompt generator - supports both auto-splitting and custom storyboards",
+  "version": "1.0.0",
   "author": {
     "name": "DR1N0"
   }
